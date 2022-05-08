@@ -1,5 +1,6 @@
 # bedrock-websocket-server
 
+## payloads
 ### subscribe payload
 ```json
 {
@@ -50,6 +51,7 @@ see [here](#known-socket-events) for known events
 }
 ```
 
+---
 
 ### known socket events
 ```json
@@ -143,7 +145,9 @@ see [here](#known-socket-events) for known events
 	"WorldUnloaded"
 ]
 ```
+---
 
+## demo
 ### subscribe event demo
 ```js
 const WebSocket = require("ws")
@@ -220,3 +224,6 @@ wss.on( "connection", ws => {
 
 ```
 
+---
+
+## responses
