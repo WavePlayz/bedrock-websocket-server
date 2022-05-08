@@ -144,4 +144,79 @@ see [here](#known-socket-events) for known events
 ]
 ```
 
+### subscribe event demo
+```js
+const WebSocket = require("ws")
+const wss = new WebSocket.Server({ port: 8080 })
+
+function createSubscribePayload (eventName) {
+	return JSON.stringify({
+		"header": {
+			"version": 1,
+			"requestId": "282b7dcd-ea7a-4d2e-9795-5710798f2026",
+			"messageType": "commandRequest",
+			"messagePurpose": "subscribe"
+		},
+		"body": {
+			"eventName": eventName
+		}
+	})
+}
+
+wss.on( "connection", ws => {
+	ws.send( createSubscribePayload( "PlayerMessage" ) )
+})
+```
+
+### unsubscribe event demo
+```js
+const WebSocket = require("ws")
+const wss = new WebSocket.Server({ port: 8080 })
+
+function createUnsubscribePayload (eventName) {
+	return JSON.stringify({
+		"header": {
+			"version": 1,
+			"requestId": "282b7dcd-ea7a-4d2e-9795-5710798f2026",
+			"messageType": "commandRequest",
+			"messagePurpose": "unsubscribe"
+		},
+		"body": {
+			"eventName": eventName
+		}
+	})
+}
+
+wss.on( "connection", ws => {
+	ws.send( createUnsubscribePayload( "PlayerMessage" ) )
+})
+```
+
+### slash command request demo
+```js
+const WebSocket = require("ws")
+const wss = new WebSocket.Server({ port: 8080 })
+
+function createCommandPayload (slashCommand) {
+	return JSON.stringify({
+		"header": {
+			"version": 1,
+			"requestId": "282b7dcd-ea7a-4d2e-9795-5710798f2026",
+			"messageType": "commandRequest",
+			"messagePurpose": "commandRequest"
+		},
+		"body": {
+			"version": 1,
+			"origin": { "type": "player" },
+			"overworld": "default",
+			"commandLine": slashCommand
+		}
+	})
+}
+
+wss.on( "connection", ws => {
+	ws.send( createCommandPayload( "/say connected to websocket server" ) )
+})
+
+```
 
