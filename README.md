@@ -1,6 +1,57 @@
 # bedrock-websocket-server
 
-Known socket events
+### subscribe payload
+```json
+{
+	"header": {
+		"version": 1,
+		"requestId": "<uuid>",
+		"messageType": "commandRequest",
+		"messagePurpose": "subscribe"
+	},
+	"body": {
+		"eventName": "<eventName>"
+	}
+}
+```
+
+see [here](#known-socket-events) for known events
+
+### unsubscribe payload
+```json
+{
+	"header": {
+		"version": 1,
+		"requestId": "<uuid>",
+		"messageType": "commandRequest",
+		"messagePurpose": "unsubscribe"
+	},
+	"body": {
+		"eventName": "<eventName>"
+	}
+}
+```
+
+### command payload
+```json
+{
+	"header": {
+		"version": 1,
+		"requestId": "<uuid>",
+		"messageType": "commandRequest",
+		"messagePurpose": "commandRequest"
+	},
+	"body": {
+		"version": 1,
+		"origin": { "type": "player" },
+		"overworld": "default",
+		"commandLine": "<slashCommand>"
+	}
+}
+```
+
+
+### known socket events
 ```json
 [
 	"AdditionalContentLoaded",
@@ -92,3 +143,5 @@ Known socket events
 	"WorldUnloaded"
 ]
 ```
+
+
