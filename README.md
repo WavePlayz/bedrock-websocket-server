@@ -100,7 +100,7 @@ see [here](#known-socket-events) for known events
 	"LicenseCensus",
 	"MascotCreated",
 	"MenuShown",
-	"MobInteracted",
+	"MobInteracted", //tested1.19.0.27
 	"MobKilled", //tested1.19.0.27
 	"MultiplayerConnectionStateChanged",
 	"MultiplayerRoundEnd",
