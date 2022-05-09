@@ -77,7 +77,7 @@ see [here](#known-socket-events) for known events
 	"ConnectionFailed",
 	"CraftingSessionCompleted",
 	"EndOfDay",
-	"EntitySpawned",
+	"EntitySpawned", //tested1.19.0.27
 	"FileTransmissionCancelled",
 	"FileTransmissionCompleted",
 	"FileTransmissionStarted",
