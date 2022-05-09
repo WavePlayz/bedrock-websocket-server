@@ -69,10 +69,10 @@ see [here](#known-socket-events) for known events
 	"BoardTextUpdated",
 	"BossKilled",
 	"CameraUsed",
-	"CauldronUsed",
-	"_ChunkChanged_1.0.2",
-	"_ChunkLoaded_1.0.2",
-	"_ChunkUnloaded_1.0.2",
+	"CauldronUsed", //notwork1.19.0.27
+	"_ChunkChanged_1.0.2", //notwork1.19.0.27
+	"_ChunkLoaded_1.0.2", //notwork1.19.0.27
+	"_ChunkUnloaded_1.0.2", //notwork1.19.0.27
 	"ConfigurationChanged",
 	"ConnectionFailed",
 	"CraftingSessionCompleted",
@@ -89,14 +89,14 @@ see [here](#known-socket-events) for known events
 	"HardwareInfo",
 	"HasNewContent",
 	"ItemAcquired", //tested1.19.0.27
-	"ItemCrafted",
-	"ItemDestroyed",
+	"ItemCrafted",  //tested1.19.0.27
+	"ItemDestroyed", //notwork1.19.0.27
 	"ItemDropped", //tested1.19.0.27
-	"ItemEnchanted",
-	"ItemSmelted",
+	"ItemEnchanted", //notwork1.19.0.27
+	"ItemSmelted", //notwork1.19.0.27
 	"ItemUsed", //tested1.19.0.27
 	"JoinCanceled",
-	"JukeboxUsed",
+	"JukeboxUsed", //notwork1.19.0.27
 	"LicenseCensus",
 	"MascotCreated",
 	"MenuShown",
@@ -117,10 +117,10 @@ see [here](#known-socket-events) for known events
 	"PlayerTeleported", //tested1.19.0.27
 	"PlayerTransform", //tested1.19.0.27
 	"PlayerTravelled", //tested1.19.0.27
-	"PortalBuilt",
-	"PortalUsed",
+	"PortalBuilt", //notwork1.19.0.27
+	"PortalUsed", //notwork1.19.0.27
 	"PortfolioExported",
-	"PotionBrewed",
+	"PotionBrewed", //notwork1.19.0.27
 	"PurchaseAttempt",
 	"PurchaseResolved",
 	"RegionalPopup",
