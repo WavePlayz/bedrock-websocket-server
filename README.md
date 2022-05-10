@@ -227,4 +227,55 @@ wss.on( "connection", ws => {
 ---
 
 ## responses
+#### PlayerMessage
+chat message
+```json
+{
+  "body": {
+    "message": "<chatText>",
+    "receiver": "",
+    "sender": "<nameTag>",
+    "type": "chat"
+  },
+  "header": {
+    "eventName": "PlayerMessage",
+    "messagePurpose": "event",
+    "version": 16842752
+  }
+}
+```
+say command
+```json
+{
+  "body": {
+    "message": "[Steve] hello",
+    "receiver": "",
+    "sender": "Steve",
+    "type": "say"
+  },
+  "header": {
+    "eventName": "PlayerMessage",
+    "messagePurpose": "event",
+    "version": 16842752
+  }
+}
+```
+tellraw
+```json
+{
+  "body": {
+    "message": "{\"rawtext\":[{\"text\":\"test\"}]}\n",
+    "receiver": "Steve",
+    "sender": "Steve",
+    "type": "tell"
+  },
+  "header": {
+    "eventName": "PlayerMessage",
+    "messagePurpose": "event",
+    "version": 16842752
+  }
+}
+```
+
+
 ...soon
