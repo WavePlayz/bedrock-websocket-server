@@ -53,7 +53,7 @@ see [here](#known-socket-events) for known events
 
 ---
 
-### known socket events
+### known socket events from mc 1.12.0.28
 ```json
 AdditionalContentLoaded
 AgentCommand
