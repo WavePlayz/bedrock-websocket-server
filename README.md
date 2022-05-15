@@ -72,9 +72,9 @@ BarrelBlockUsed
 BehaviorErrored
 BehaviorFailed
 BellBlockUsed
-BlockBroken
-BlockFound
-BlockPlaced
+BlockBroken ..
+BlockFound 
+BlockPlaced ..
 BlockPlacedByCommand
 BoardTextUpdated
 BookCopied
@@ -119,8 +119,8 @@ ElementConstructorUsed
 EndOfDay
 EntitlementListInfo
 EntityDanced
-EntityInteracted
-EntitySpawned
+EntityInteracted ..
+EntitySpawned ..
 ExperimentalGameplay
 FileTransmissionCancelled
 FileTransmissionCompleted
@@ -144,16 +144,16 @@ HasNewContent
 Heartbeat
 HowToPlayTopicChanged
 IncognitoFailure
-ItemAcquired
-ItemCrafted
-ItemDestroyed
-ItemDropped
+ItemAcquired ..
+ItemCrafted ..
+ItemDestroyed 
+ItemDropped ..
 ItemEnchanted
-ItemEquipped
-ItemInteracted
+ItemEquipped ..
+ItemInteracted ..
 ItemNamed
 ItemSmelted
-ItemUsed
+ItemUsed ..
 JoinByCode
 JoinCanceled
 JukeboxUsed
@@ -167,8 +167,8 @@ MascotCreated
 MenuShown
 MobBorn
 MobEffectChanged
-MobInteracted
-MobKilled
+MobInteracted ..
+MobKilled ..
 MultiplayerConnectionStateChanged
 MultiplayerRoundEnd
 MultiplayerRoundStart
@@ -191,19 +191,19 @@ PatternRemoved
 PerformanceMetrics
 PetDied
 PlayerBounced
-PlayerDied
-PlayerJoin
-PlayerLeave
-PlayerMessage
+PlayerDied ..
+PlayerJoin ..
+PlayerLeave ..
+PlayerMessage ..
 PlayerMessageChat
 PlayerMessageMe
 PlayerMessageSay
 PlayerMessageTell
 PlayerMessageTitle
 PlayerSaved
-PlayerTeleported
-PlayerTransform
-PlayerTravelled
+PlayerTeleported ..
+PlayerTransform ..
+PlayerTravelled ..
 PopupFiredEdu
 PortalBuilt
 PortalUsed
