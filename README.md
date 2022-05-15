@@ -55,95 +55,227 @@ see [here](#known-socket-events) for known events
 
 ### known socket events
 ```json
-[
-	"AdditionalContentLoaded",
-	"AgentCommand",
-	"AgentCreated",
-	"ApiInit",
-	"AppPaused",
-	"AppResumed",
-	"AppSuspended",
-	"AwardAchievement",
-	"BlockBroken", //tested1.19.0.27
-	"BlockPlaced", //tested1.19.0.27
-	"BoardTextUpdated",
-	"BossKilled",
-	"CameraUsed",
-	"CauldronUsed", //notwork1.19.0.27
-	"_ChunkChanged_1.0.2", //notwork1.19.0.27
-	"_ChunkLoaded_1.0.2", //notwork1.19.0.27
-	"_ChunkUnloaded_1.0.2", //notwork1.19.0.27
-	"ConfigurationChanged",
-	"ConnectionFailed",
-	"CraftingSessionCompleted",
-	"EndOfDay",
-	"EntitySpawned", //tested1.19.0.27
-	"FileTransmissionCancelled",
-	"FileTransmissionCompleted",
-	"FileTransmissionStarted",
-	"FirstTimeClientOpen",
-	"FocusGained",
-	"FocusLost",
-	"GameSessionComplete",
-	"GameSessionStart",
-	"HardwareInfo",
-	"HasNewContent",
-	"ItemAcquired", //tested1.19.0.27
-	"ItemCrafted",  //tested1.19.0.27
-	"ItemDestroyed", //notwork1.19.0.27
-	"ItemDropped", //tested1.19.0.27
-	"ItemEnchanted", //notwork1.19.0.27
-	"ItemSmelted", //notwork1.19.0.27
-	"ItemUsed", //tested1.19.0.27
-	"JoinCanceled",
-	"JukeboxUsed", //notwork1.19.0.27
-	"LicenseCensus",
-	"MascotCreated",
-	"MenuShown",
-	"MobInteracted", //tested1.19.0.27
-	"MobKilled", //tested1.19.0.27
-	"MultiplayerConnectionStateChanged",
-	"MultiplayerRoundEnd",
-	"MultiplayerRoundStart",
-	"NpcPropertiesUpdated",
-	"OptionsUpdated",
-	"performanceMetrics",
-	"PackImportStage",
-	"PlayerBounced",
-	"PlayerDied", //tested1.19.0.27
-	"PlayerJoin", //tested1.19.0.27
-	"PlayerLeave", //tested1.19.0.27
-	"PlayerMessage", //tested1.19.0.27
-	"PlayerTeleported", //tested1.19.0.27
-	"PlayerTransform", //tested1.19.0.27
-	"PlayerTravelled", //tested1.19.0.27
-	"PortalBuilt", //notwork1.19.0.27
-	"PortalUsed", //notwork1.19.0.27
-	"PortfolioExported",
-	"PotionBrewed", //notwork1.19.0.27
-	"PurchaseAttempt",
-	"PurchaseResolved",
-	"RegionalPopup",
-	"RespondedToAcceptContent",
-	"ScreenChanged",
-	"ScreenHeartbeat",
-	"SignInToEdu",
-	"SignInToXboxLive",
-	"SignOutOfXboxLive",
-	"SpecialMobBuilt",
-	"StartClient",
-	"StartWorld",
-	"TextToSpeechToggled",
-	"UgcDownloadCompleted",
-	"UgcDownloadStarted",
-	"UploadSkin",
-	"VehicleExited",
-	"WorldExported",
-	"WorldFilesListed",
-	"WorldGenerated",
-	"WorldLoaded",
-	"WorldUnloaded"
-]
+AdditionalContentLoaded
+AgentCommand
+AgentCreated
+ApiInit
+AppConfigurationChanged
+AppPaused
+AppResumed
+AppSuspended
+AppUnpaused
+ArmorStandItemEquipped
+ArmorStandPosed
+AssertFailed
+AwardAchievement
+BarrelBlockUsed
+BehaviorErrored
+BehaviorFailed
+BellBlockUsed
+BlockBroken
+BlockFound
+BlockPlaced
+BlockPlacedByCommand
+BoardTextUpdated
+BookCopied
+BookEdited
+BookExported
+BookImageImported
+BossKilled
+CameraUsed
+CampfireBlockUsed
+CaravanChanged
+CartographyBlockUsed
+CauldronBlockUsed
+CauldronUsed
+ChatSettingsUpdated
+ChunkChanged
+ChunkLoaded
+ChunkUnloaded
+ClientIdCreated
+CodeBuilderClosed
+CodeBuilderDownload
+CommandBlockEdited
+ComposterBlockUsed
+CompoundCreatorCreated
+ConfigurationChanged
+ConnectionFailed
+ContentLogsInWorldSession
+ContentShared
+ControlRemappedByPlayer
+CopyWorldEducationEnabled
+CraftingSessionCompleted
+CraftingSessionEnd
+CraftingSessionStart
+DefaultGameTypeChanged
+DevConsoleCommand
+DevConsoleOpen
+DifficultySet
+DwellerDied
+EduOptionSet
+EduResources
+EduiOSPurchaseTransaction
+ElementConstructorUsed
+EndOfDay
+EntitlementListInfo
+EntityDanced
+EntityInteracted
+EntitySpawned
+ExperimentalGameplay
+FileTransmissionCancelled
+FileTransmissionCompleted
+FileTransmissionStarted
+FileTransmissionState
+FirstTimeClientOpen
+FishBucketed
+FixedMarketplaceWorldUsingV2VillagersToUseV1
+FloatPropertyList
+FocusGained
+FocusLost
+GameRulesLoaded
+GameRulesUpdated
+GameSessionComplete
+GameSessionStart
+GameTypeChanged
+GameplayTipShown
+GrindstoneBlockUsed
+HardwareInfo
+HasNewContent
+Heartbeat
+HowToPlayTopicChanged
+IncognitoFailure
+ItemAcquired
+ItemCrafted
+ItemDestroyed
+ItemDropped
+ItemEnchanted
+ItemEquipped
+ItemInteracted
+ItemNamed
+ItemSmelted
+ItemUsed
+JoinByCode
+JoinCanceled
+JukeboxUsed
+LabTableCreated
+LecternBlockUsed
+LevelDatLoadFailed
+LevelDestruct
+LicenseCensus
+LicenseCheck
+MascotCreated
+MenuShown
+MobBorn
+MobEffectChanged
+MobInteracted
+MobKilled
+MultiplayerConnectionStateChanged
+MultiplayerRoundEnd
+MultiplayerRoundStart
+MultiplayerSessionUpdate
+NewStoreContentCheckCompleted
+NewUserPackDetected
+NpcPropertiesUpdated
+OfferRated
+OptionsUpdated
+POIBlockUsageAttempt
+POIBlockUsed
+PackHashChanged
+PackImportStage
+PackImportStarted
+PackImportedCompleted
+PackPlayed
+PackUpgradeAttempt
+PatternAdded
+PatternRemoved
+PerformanceMetrics
+PetDied
+PlayerBounced
+PlayerDied
+PlayerJoin
+PlayerLeave
+PlayerMessage
+PlayerMessageChat
+PlayerMessageMe
+PlayerMessageSay
+PlayerMessageTell
+PlayerMessageTitle
+PlayerSaved
+PlayerTeleported
+PlayerTransform
+PlayerTravelled
+PopupFiredEdu
+PortalBuilt
+PortalUsed
+PortfolioExported
+PotionBrewed
+PromotionNotificationClicked
+PurchaseAttempt
+PurchaseFailureDetails
+PurchaseGameAttempt
+PurchaseResolved
+PushNotificationOpened
+PushNotificationPermission
+PushNotificationReceived
+RealmMemberlistCleared
+RealmShared
+RealmUrlGenerated
+ReducerBlockEntered
+RegionalPopup
+Respawn
+RespondedToAcceptContent
+ScreenChanged
+ScreenHeartbeat
+ScriptLoaded
+ScriptRan
+SearchCatalogRequest
+SearchItemSelected
+SetMultiplayerCorrelationId
+SetValidForAchievements
+SignInEdu
+SignInToEdu
+SignInToXboxLive
+SignOutOfXboxLive
+SignedBookOpened
+SkinChanged
+SlashCommandExecuted
+SpecialMobBuilt
+SplitScreenUpdated
+StackLoaded
+StartClient
+StartWorld
+Storage
+StorageReport
+StoreOfferClicked
+StoreOfferPurchaseAttempt
+StoreOfferPurchaseFailure
+StoreOfferPurchaseResolved
+StorePromotionNotification
+StoreSearch
+StructureExport
+StructureGenerated
+TextToSpeechToggled
+TradeCompleted
+TreatmentPackApplied
+TreatmentPackDownloaded
+TreatmentPackRemoved
+TreatmentsCleared
+TreatmentsSet
+TrialDeviceIdCorrelation
+UgcDownloadCompleted
+UgcDownloadStarted
+UnknownBlockReceived
+UploadSkin
+VehicleExited
+VideoPlayed
+WorldExported
+WorldFilesListed
+WorldGenerated
+WorldHistoryPackSourceMissingDuringUpgrade
+WorldImported
+WorldLoaded
+WorldUnloaded
+performanceMetrics
 ```
 ---
 
