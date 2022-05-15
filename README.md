@@ -54,6 +54,7 @@ see [here](#known-socket-events) for known events
 ---
 
 ### known socket events from mc 1.12.0.28
+`..` = working/tested in 1.19.0.32
 ```json
 AdditionalContentLoaded
 AgentCommand
